@@ -92,7 +92,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    overflow: hidden;
     position: relative;
   }
 
@@ -227,6 +226,7 @@
     z-index: 3;
     display: flex;
     gap: 2rem;
+    max-width: 50%;
   }
 
   .badge {
@@ -723,6 +723,9 @@
       padding: 1.5rem 1.5rem 2rem;
       background: var(--vert-fonce);
       border-top: 1px solid rgba(107,158,94,0.15);
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
     .badge-sep { display: none; }
     .services-intro { grid-template-columns: 1fr; gap: 1.5rem; }
