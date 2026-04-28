@@ -221,14 +221,15 @@
 
   /* ─── BADGES HERO ─── */
   .hero-badges {
-    grid-column: 1;
-    grid-row: 2;
+    background: var(--vert-fonce);
     display: flex;
-    gap: 2rem;
-    padding: 1.5rem 3rem 2rem 5rem;
-    position: relative;
-    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1.5rem 2rem;
     border-top: 1px solid rgba(107,158,94,0.15);
+    width: 100%;
+    box-sizing: border-box;
   }
 
 
@@ -742,14 +743,6 @@
       object-position: center 15%;
     }
     .hero-visual::after { display: none; }
-    .hero-badges {
-      order: 3;
-      display: flex;
-      justify-content: space-around;
-      gap: 0;
-      padding: 1.5rem 1rem;
-      border-top: 1px solid rgba(107,158,94,0.15);
-    }
     .badge-sep { display: none; }
     .hero p { max-width: 100%; }
 
@@ -797,23 +790,24 @@
   <div class="hero-visual">
     <img src="assets/elagage.webp" alt="Alexandre Deguine, arboriste grimpeur en action" loading="eager">
   </div>
-  <div class="hero-badges">
-    <div class="badge">
-      <span class="badge-num">10+</span>
-      <p class="badge-label">Années d'expérience</p>
-    </div>
-    <div class="badge-sep"></div>
-    <div class="badge">
-      <span class="badge-num">100+</span>
-      <p class="badge-label">Chantiers réalisés</p>
-    </div>
-    <div class="badge-sep"></div>
-    <div class="badge">
-      <span class="badge-num">100%</span>
-      <p class="badge-label">Satisfaction client</p>
-    </div>
-  </div>
 </section>
+
+<div class="hero-badges">
+  <div class="badge">
+    <span class="badge-num">10+</span>
+    <p class="badge-label">Années d'expérience</p>
+  </div>
+  <div class="badge-sep"></div>
+  <div class="badge">
+    <span class="badge-num">100+</span>
+    <p class="badge-label">Chantiers réalisés</p>
+  </div>
+  <div class="badge-sep"></div>
+  <div class="badge">
+    <span class="badge-num">100%</span>
+    <p class="badge-label">Satisfaction client</p>
+  </div>
+</div>
 
 <!-- SERVICES -->
 <section class="services" id="services">
