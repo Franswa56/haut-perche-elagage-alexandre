@@ -712,10 +712,19 @@
     nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
     section { padding: 4rem 1.5rem; }
-    .hero { grid-template-columns: 1fr; min-height: auto; }
-    .hero-content { padding: 7rem 1.5rem 3rem; }
-    .hero-visual { height: 50vw; }
-    .hero-badges { left: 1.5rem; bottom: 2rem; }
+    .hero { grid-template-columns: 1fr; grid-template-rows: auto auto auto; min-height: auto; }
+    .hero-content { padding: 7rem 1.5rem 2rem; }
+    .hero-visual { height: 70vw; }
+    .hero-badges {
+      position: static;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1.5rem 1.5rem 2rem;
+      background: var(--vert-fonce);
+      border-top: 1px solid rgba(107,158,94,0.15);
+    }
+    .badge-sep { display: none; }
     .services-intro { grid-template-columns: 1fr; gap: 1.5rem; }
     .services-grid { grid-template-columns: 1fr; }
     .about { grid-template-columns: 1fr; gap: 3rem; }
@@ -762,12 +771,12 @@
   </div>
   <div class="hero-badges">
     <div class="badge">
-      <span class="badge-num">15+</span>
+      <span class="badge-num">10+</span>
       <p class="badge-label">Années d'expérience</p>
     </div>
     <div class="badge-sep"></div>
     <div class="badge">
-      <span class="badge-num">500+</span>
+      <span class="badge-num">100+</span>
       <p class="badge-label">Chantiers réalisés</p>
     </div>
     <div class="badge-sep"></div>
